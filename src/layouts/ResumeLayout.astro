@@ -6,6 +6,8 @@ import HeadlineBio from '../components/HeadlineBio.astro';
 import HeaderLink from '../components/HeaderLink.astro';
 import ResumeTechstack from './resumeTechstack.astro';
 import ResumeWorkhistory from './resumeWorkhistory.astro';
+import ResumeAccomplishments from './resumeAccomplishments.astro';
+import ResumeEducation from './resumeEducation.astro';
 
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
@@ -27,6 +29,8 @@ const { title } = Astro.props;
 			<ResumeSummary/>
 			<ResumeTechstack/>
 			<ResumeWorkhistory/>
+			<ResumeAccomplishments/>
+			<ResumeEducation/>
 		</div>
 	</body>
 </html>

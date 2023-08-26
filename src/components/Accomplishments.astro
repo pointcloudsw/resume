@@ -1,0 +1,13 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { getEntry, getEntries, getCollection } from 'astro:content';
+
+const allEntries = await getCollection('accomplishments');
+---
+{
+    allEntries.map((e) => (
+    <div class="card--project">
+        <span>🏆 </span>{e.data.line1}
+    </div>
+    ))
+}

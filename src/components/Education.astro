@@ -1,0 +1,20 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { getEntry, getEntries, getCollection } from 'astro:content';
+
+const allEntries = await getCollection('education');
+---
+{
+    allEntries.map((e) => (
+    <div class="card--education">
+
+        <strong class="p--education">
+            {e.data.line1}
+        </strong>
+        <p class="p--education">
+            {e.data.line2}
+        </p>
+    </div>
+
+    ))
+}
