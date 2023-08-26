@@ -57,7 +57,7 @@ li{
     font-weight: 300;
 }
 #container--main{
-    max-width: 730px;
+    max-width: 700px;
     margin: 0 auto;
     padding: 1em;
 }
@@ -226,35 +226,15 @@ li{
 }
 
 .social--logo{
-    inline-size: 30%;
     fill: currentColor;
-    margin-top: -1rem;
-    padding-top: 2px;
 }
 .social--logo-a{
-    /* display: none; */
     font-size:xx-small;
-    /* font-weight:unset; */
     line-height: 0.1em;
 }
 .social--logo-a-text{
     line-height: .2rem;
     vertical-align: top;
-}
-.social--logo-github{
-    inline-size: 22%;
-    fill: currentColor;
-    /* margin-top: -1.3rem; */
-    /* padding-top: 2px; */
-
-}
-.social--logo-twitter{
-    inline-size: 16%;
-    fill: currentColor;
-    margin-top: 0.6rem;
-    /* padding-top: 1px; */
-    /* padding-top: 8px; */
-
 }
 .social--logo-svg-container{
     width: 85%;
