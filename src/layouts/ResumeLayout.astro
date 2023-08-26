@@ -1,9 +1,6 @@
 --- 
-import BaseHead from '../components/BaseHead.astro';
 import ResumeHeader from './resumeHeader.astro';
 import ResumeSummary from './resumeSummary.astro';
-import HeadlineBio from '../components/HeadlineBio.astro';
-import HeaderLink from '../components/HeaderLink.astro';
 import ResumeTechstack from './resumeTechstack.astro';
 import ResumeWorkhistory from './resumeWorkhistory.astro';
 import ResumeAccomplishments from './resumeAccomplishments.astro';
@@ -17,20 +14,13 @@ interface Props {
 
 const { title } = Astro.props;
 ---
-
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<div id="container--main">
-			<ResumeHeader/>
-			<ResumeSummary/>
-			<ResumeTechstack/>
-			<ResumeWorkhistory/>
-			<ResumeAccomplishments/>
-			<ResumeEducation/>
-		</div>
-	</body>
-</html>
+<main>
+	<div id="container--main">
+		<ResumeHeader/>
+		<ResumeSummary/>
+		<ResumeTechstack/>
+		<ResumeWorkhistory/>
+		<ResumeAccomplishments/>
+		<ResumeEducation/>
+	</div>
+</main>
