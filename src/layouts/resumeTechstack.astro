@@ -1,11 +1,12 @@
 ---
 import TableTechstack from "../components/TableTechstack.astro";
+const { sectitle } = Astro.props;
 ---
 
 
 <section class="tech-stack-section--page">
 
-    <h2 class="section-heading--h2">&nbsp;Technology Stack&nbsp;</h2>
+    <h2 class="section-heading--h2">{sectitle}</h2>
     <div class="line-break"></div>
 
     <div class="card--generic">

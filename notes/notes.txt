@@ -1,0 +1,40 @@
+                                    {
+                                            // whbonusEntries.filter((f)=>e.slug === f.slug).map((fe)=>fe.body.split('\n').map((fb)=>(<li>{fb}</li>)))
+                                            <li>whbonusEntries.filter((f)=>e.slug === f.slug)</li>
+                                        }
+                                        {whbonusEntries.map((f)=>(<p>{e.slug}</p><p>{f.body}</p><p>{e.slug === f.slug}</p>))}
+
+
+
+                        <!-- optional section -->
+                        {
+                            if(whbonusEntries.filter((we)=>(we.slug === e.slug)).length){
+                                
+                            }
+                        }
+                        <div>
+                            <span class="card--boxlist">
+                                <ul class="ul--boxlist">
+                                        {whbonusEntries
+                                            .filter((we)=>(we.slug === e.slug))
+                                            .map((ent)=>ent.body.split('\n')
+                                                .map((li)=>(<p>{li}</p>))
+                                            )
+                                        }
+                                </ul>
+                            </span>
+                        </div>        
+
+
+                        <div>
+                            <span class="card--boxlist">
+                                <ul class="ul--boxlist">
+                                        {whbonusEntries
+                                            .filter((we)=>(we.slug === e.slug))
+                                            .map((ent)=>ent.body.split('\n')
+                                                .map((li)=>(<p>{li}</p>))
+                                            )
+                                        }
+                                </ul>
+                            </span>
+                        </div>       
