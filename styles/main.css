@@ -57,7 +57,7 @@ li{
     font-weight: 300;
 }
 #container--main{
-    max-width: 700px;
+    max-width: 680px;
     margin: 0 auto;
     padding: 1em;
 }
@@ -72,26 +72,17 @@ li{
 
 
 #profile-pic{
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     object-fit: cover;
     border-radius: 50%;
     transform: rotate(-12deg);
-    margin: -12% 0 0 0;
+    margin: 1% 0 0 5%;
 }
 #qualifications--list{
     list-style: none;
 }
-/*
-#section--page--print-header *{
-    display: none;
-    visibility: collapse;
-}
-.section--page--print-header *{
-    display: none;
-    visibility: collapse;
-}
-*/
+
 #socials--list{
     display: flex;
     justify-content: space-between;
@@ -111,17 +102,13 @@ li{
     color: var(--mainLinkColor);
     font-size: 0.9em;
 }
-#user-name{
-    font-size: 48px;
-    line-height: 1em;
-}
 #work-history-wrapper{
     width: 100%;
 }
 #wrapper--hero{
     display: flex;
     align-items: center;
-    gap: 4em;
+    gap: 5%;
     vertical-align: top;
     padding: 0 0 0 0;
 
@@ -182,10 +169,7 @@ li{
     align-items:center;
     margin: 0.25em;
 }
-.card--techstack-bottom-border{
-    background-color: var(--mainBorderColor);
-    height: 1px;
-}
+
 .card--work-history{
     border-left: 1px solid var(--mainBorderColor);
     margin-top: 3em;
@@ -203,9 +187,6 @@ li{
     margin: 2% 0 2% 0;
 }
 
-.img--tech-stack-language{
-    inline-size: 5%;
-}
 .line-break{
     background-color: var(--mainBorderColor);
     height: 1px;
@@ -213,9 +194,6 @@ li{
 
 .p--education{
     line-height: 1px;
-}
-.no-screen *{
-    display: none;
 }
 .section-heading--h2{
     line-height: 0.5em;
@@ -320,13 +298,11 @@ li{
     padding: 0 1%;
 }
 .td-work-history-employer-name{
-    /* width: 20%; */
     text-align:left;
     vertical-align: text-top;
     padding: 1% 0;
 }
 .td-work-history-from-to-dates{
-    /* width: 30%; */
     text-align: right;
 }
 .td-work-history-summary{
@@ -406,7 +382,6 @@ li{
     /* https://developer.mozilla.org/en-US/docs/Web/CSS/page */
     /* https://developer.mozilla.org/en-US/docs/Web/CSS/@media */
 
-/* @page { */
 @media print {
 
     *{
@@ -422,22 +397,10 @@ li{
     a{
         text-decoration: none;
         color: var(--mainLinkColor-light);
-        /* font-weight: 500; */
     }
-    /* li{
-        line-height: 1.0em;
-    } */
 
-    #email{
-        color: var(--mainTextColor-light);
-    }
-    
     #socials--list a{
         color: var(--secondaryTextColor-light);
-        /* margin: -20% inherit inherit inherit;
-        padding: -20% inherit inherit inherit; */
-        /* margin: 0 0 0 0; */
-        /* padding: 0 0 0 0; */
         vertical-align: top;
     }
     
@@ -451,60 +414,6 @@ li{
     .no-screen *{
         display: unset;
     }
-    /* margin & padding */
-    /* top | right | bottom | left */
-    /*
-    p
-    ,.table--work-experience
-    ,.tr--work-experience
-    , .td-work-history-summary{
-        line-height: 0.8em;
-    }
-
-    .td--work-history--bullets{
-        line-height: 0.8em;
-        margin: 0 0 0 0;
-        padding: 0 0 0 0;
-    }
-    .section--page *{
-        line-height: 0.8em;
-        margin: 0 1% 0 2%;
-        padding: 0 1px 0 2px;
-    }
-    p
-    ,.table--work-experience
-    ,.tr--work-experience
-    , .td-work-history-summary{
-        line-height: 0.8em;
-    }
-    .ul--work-history--bullets{
-        line-height: 0.8em;
-        margin: 0 0 0 0;
-        padding: 0 0 0 0;
-        margin: 0 1% 0 2%;
-        padding: 0 1px 0 2px;
-
-    }
-    */
-
-/*
-    .section--page *{
-        display: block;
-        line-height: 0.8em;
-        margin: 0 1% 0 4%;
-        padding: 0 3px 0 3px;
-        line-height: 1.1em;
-
-    }
-    */
-    /*
-    #section--page--print-header{
-        display:block;
-    }
-    .section--page--print-header{
-        display:block;
-    }
-    */
   }
   @media print {
     @page {
@@ -513,11 +422,5 @@ li{
         margin-top: 0;
         margin-bottom: 0;
       }
-    /* #profile-pic{
-        visibility: collapse;
-    } */
-    /* #wrapper--hero{
-        visibility: collapse;
-    } */
 }
 
