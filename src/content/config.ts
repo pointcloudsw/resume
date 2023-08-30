@@ -19,11 +19,49 @@ const whbonusCollection = defineCollection({
     })
 });
 
+const socialsImgCollection = defineCollection({
+  type: 'content',
+  schema: z.object({
+    id: z.number().optional()
+    ,width: z.number().optional()
+    ,height: z.number().optional()
+    ,viewBox: z.string().optional()
+    ,d: z.string().optional()
+  })
+})
+
+const socialsCollection = defineCollection({
+  type: 'content',
+  schema: z.object({
+    id: z.number().optional()
+    ,content_dir: z.string().optional()
+    ,title: z.string().optional()
+    ,handle: z.string().optional()
+    ,href: z.string().url().optional()
+    ,logo_href: z.string().url().optional()
+    ,logo_img_type: z.string().optional()
+    ,logo_src: z.string().optional()
+    ,logo_id: z.string().optional()
+    ,logo_class: z.string().optional()
+    ,logo_target: z.string().optional()
+    ,logo_aria_label: z.string().optional()
+    ,link_href: z.string().url().optional()
+    ,link_path: z.string().optional()
+    ,link_text: z.string().optional()
+    ,link_src: z.string().optional()
+    ,link_id: z.string().optional()
+    ,link_class: z.string().optional()
+    ,link_aria_label: z.string().optional()
+    ,link_target: z.string().optional()
+  })
+});
 
 const workhistoryCollection = defineCollection({
   type: 'content',
   schema: z.object({
      whid: z.string()
+     ,id: z.string().optional()
+     ,content_dir: z.string().optional()
     ,title: z.string()
     ,wh_smry: z.string()
     ,whbonus: reference('whbonus').optional()
@@ -44,4 +82,6 @@ export const collections = {
   ,'accomplishments': genericCollection
   ,'whbonus': whbonusCollection
   ,'workhistory': workhistoryCollection
+  ,'socials': socialsCollection
+  ,'socialImgs': socialsImgCollection
 };

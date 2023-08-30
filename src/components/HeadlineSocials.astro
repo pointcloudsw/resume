@@ -1,50 +1,36 @@
 ---
-import SvgGithub from '../components/assets/SvgGithub.astro';
-import SvgLinkedin from '../components/assets/SvgLinkedin.astro';
-import SvgTwitter from '../components/assets/SvgTwitter.astro';
+import { getCollection, getEntry } from 'astro:content';
+import HeadlineSocialImage from './HeadlineSocialImage.astro';
+const { social_id, logo_img_typ
+     , logo_href, logo_target
+     , logo_class, logo_src
+     , link_href, link_target
+     , link_class, link_text } = Astro.props;
+const imgEntries = await getCollection('socials/img');
+console.log('imgEntries:',imgEntries);
+const imgEntry = await imgEntries.getEntry(social_id);
+console.log('imgEntry:',imgEntry);
+
+console.log(Astro.props)
 ---
-<div id="socials--list">
-    <table class="table--socials">
-        <tr class="tr--socials">
-            <td class="td--socials-logo">
-                <a href="https://github.com/jrollio" target="_blank" class="social--logo-a">
-                    <div>
-                        <SvgGithub/>
-                    </div>
-                </a>
-            </td>
-            <td class="td--socials-logo">
-                <a href="https://www.linkedin.com/in/jroll/" target="_blank" class="social--logo-a">
-                    <SvgLinkedin/>
-                </a>
-            </td>
-            <td class="td--socials-logo">
-                <a href="https://twitter.com/jrollio" target="_blank" class="social--logo-a">
-                    <div>
-                        <SvgTwitter/>
-                    </div>
-                </a>
-            </td>
-        </tr>
-    </table>
-    <table class="table--socials-row-2">
-        <tr>
-            <td class="td--socials-name">
-                <a href="https://github.com/jrollio" target="_blank" class="social--logo-a-text">
-                    Github
-                </a>
-            </td>
-            <td class="td--socials-name">
-                <a href="https://www.linkedin.com/in/jroll/" target="_blank"
-                    class="social--logo-a-text">
-                    LinkedIn
-                </a>
-            </td>
-            <td class="td--socials-name">
-                <a href="https://twitter.com/jrollio" target="_blank" class="social--logo-a-text">
-                    Twitter
-                </a>
-            </td>
-        </tr>
-    </table>
+<div>
+    <div>
+        <a href={logo_href} target={logo_target} class={logo_class}>
+            <div>
+                <img src={logo_src} class={logo_class}/>
+                <HeadlineSocialImage
+                    type={logo_img_typ}
+                    width={imgEntry.data.width}
+                    height={imgEntry.data.height}
+                    vb={imgEntry.data.viewBox}
+                    d={imgEntry.data.d}
+                    />
+            </div>
+        </a>
+    </div>
+    <div>
+        <a href={link_href} target={link_target} class={link_class}>
+            {link_text}
+        </a>
+    </div>
 </div>

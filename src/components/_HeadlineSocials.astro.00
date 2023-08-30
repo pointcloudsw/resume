@@ -1,0 +1,50 @@
+---
+import SvgGithub from '../components/assets/SvgGithub.astro';
+import SvgLinkedin from '../components/assets/SvgLinkedin.astro';
+import SvgTwitter from '../components/assets/SvgTwitter.astro';
+---
+<div id="socials--list">
+    <table class="table--socials">
+        <tr class="tr--socials">
+            <td class="td--socials-logo">
+                <a href="https://github.com/jrollio" target="_blank" class="social--logo-a">
+                    <div>
+                        <SvgGithub/>
+                    </div>
+                </a>
+            </td>
+            <td class="td--socials-logo">
+                <a href="https://www.linkedin.com/in/jroll/" target="_blank" class="social--logo-a">
+                    <SvgLinkedin/>
+                </a>
+            </td>
+            <td class="td--socials-logo">
+                <a href="https://twitter.com/jrollio" target="_blank" class="social--logo-a">
+                    <div>
+                        <SvgTwitter/>
+                    </div>
+                </a>
+            </td>
+        </tr>
+    </table>
+    <table class="table--socials-row-2">
+        <tr>
+            <td class="td--socials-name">
+                <a href="https://github.com/jrollio" target="_blank" class="social--logo-a-text">
+                    Github
+                </a>
+            </td>
+            <td class="td--socials-name">
+                <a href="https://www.linkedin.com/in/jroll/" target="_blank"
+                    class="social--logo-a-text">
+                    LinkedIn
+                </a>
+            </td>
+            <td class="td--socials-name">
+                <a href="https://twitter.com/jrollio" target="_blank" class="social--logo-a-text">
+                    Twitter
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>

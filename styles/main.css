@@ -83,12 +83,6 @@ li{
     list-style: none;
 }
 
-#socials--list{
-    display: flex;
-    justify-content: space-between;
-    column-gap: 1em;
-    flex-wrap: wrap;
-}
 
 #socials--list a{
     font-weight: 300;
@@ -204,11 +198,20 @@ li{
 }
 
 .social--logo{
-    fill: currentColor;
+    /* fill: currentColor; */
+    fill: var(--mainTextColor);
+    color: var(--mainTextColor);
+}
+svg{
+    /* fill: currentColor; */
+    fill: white;
+    color: var(--mainTextColor);
 }
 .social--logo-a{
     font-size:xx-small;
     line-height: 0.1em;
+    fill: var(--mainTextColor);
+    color: var(--mainTextColor);
 }
 .social--logo-a-text{
     line-height: .2rem;
@@ -217,22 +220,15 @@ li{
 .social--logo-svg-container{
     width: 85%;
     height: 85%;
+    fill: var(--mainTextColor);
+    color: var(--mainTextColor);
 }
 
 .table--contact-info{
     width: 100%;
     height: 25%;
 }
-.table--socials{
-    width: 100%;
-    height: 50%;
-    line-height: 0.5rem;
-}
-.table--socials-row-2{
-    width: 100%;
-    height: 25%;
-    line-height: 0.5rem;
-}
+
 .table--techstack{
     margin: 0 8% 0 0;
 }
@@ -267,18 +263,6 @@ li{
 .td--headline-contact-info-rhs{
     text-align: right;
     width: 40%
-}
-.td--socials-logo{
-    width: 25%;
-    text-align: center;
-    vertical-align: middle;
-    line-height: .2rem;
-    margin: 0%;
-    padding: 0%;
-}
-.td--socials-name{
-    width: 25%;
-    text-align: center;
 }
 
 .td-tech-stack-row-header{
@@ -323,16 +307,57 @@ li{
     line-height: 0.5rem;
     height: 25%;
 }
-.tr--socials{
-    line-height: 0.5rem;
-    height: 25%;
-}
+
 .ul--boxlist{
     list-style: none;
 }
 
+/**
+ **  begin resume socials stanza
+**/
+#socials--list{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1em;
+    flex-wrap: wrap;
+}
 
-
+.table--socials{
+    width: 100%;
+    height: 50%;
+    line-height: 0.5rem;
+}
+.table--socials-row-2{
+    width: 100%;
+    height: 25%;
+    line-height: 0.5rem;
+}
+.td--socials-logo{
+    width: 25%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: .2rem;
+    margin: 0%;
+    padding: 0%;
+}
+.td--socials-name{
+    width: 25%;
+    text-align: center;
+}
+.tr--socials{
+    line-height: 0.5rem;
+    height: 25%;
+}
+.socials--box{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-between;
+}
+/**
+ **  end resume socials stanza
+**/
 
 @media (prefers-color-scheme:light){
     :root{
