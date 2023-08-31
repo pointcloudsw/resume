@@ -196,16 +196,11 @@ li{
     padding-top: 1em;
     padding-bottom: 1em;
 }
-
-.social--logo{
-    /* fill: currentColor; */
-    fill: var(--mainTextColor);
-    color: var(--mainTextColor);
+.section--split{
+    padding: 1% 0 1% 0;
 }
-svg{
-    /* fill: currentColor; */
-    fill: white;
-    color: var(--mainTextColor);
+.social--logo{
+    fill: var(--secondaryTextColor, currentColor);
 }
 .social--logo-a{
     font-size:xx-small;
@@ -216,12 +211,6 @@ svg{
 .social--logo-a-text{
     line-height: .2rem;
     vertical-align: top;
-}
-.social--logo-svg-container{
-    width: 85%;
-    height: 85%;
-    fill: var(--mainTextColor);
-    color: var(--mainTextColor);
 }
 
 .table--contact-info{
@@ -317,7 +306,7 @@ svg{
 **/
 #socials--list{
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     column-gap: 1em;
     flex-wrap: wrap;
 }

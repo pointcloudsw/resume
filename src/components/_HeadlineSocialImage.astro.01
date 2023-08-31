@@ -1,0 +1,14 @@
+---
+import '../../styles/main.css';
+// const { type, width, height, vb, d, classes } = Astro.props;
+const { d } = Astro.props;
+// console.log(type,width,height,vb,d,class);
+---
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg>
+{
+                    <path
+                        d={d}
+                    />
+                }
+                </svg>

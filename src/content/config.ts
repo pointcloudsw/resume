@@ -19,10 +19,12 @@ const whbonusCollection = defineCollection({
     })
 });
 
-const socialsImgCollection = defineCollection({
+const svgCollection = defineCollection({
   type: 'content',
   schema: z.object({
     id: z.number().optional()
+    ,class: z.string().optional()
+    ,name: z.string().optional()
     ,width: z.number().optional()
     ,height: z.number().optional()
     ,viewBox: z.string().optional()
@@ -53,6 +55,8 @@ const socialsCollection = defineCollection({
     ,link_class: z.string().optional()
     ,link_aria_label: z.string().optional()
     ,link_target: z.string().optional()
+    ,type: z.string().optional()
+    ,svg: reference('svg')
   })
 });
 
@@ -83,5 +87,5 @@ export const collections = {
   ,'whbonus': whbonusCollection
   ,'workhistory': workhistoryCollection
   ,'socials': socialsCollection
-  ,'socialImgs': socialsImgCollection
+  ,'svg': svgCollection
 };

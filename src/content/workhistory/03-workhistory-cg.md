@@ -13,4 +13,4 @@ Broadband Subscriber Management & Migration Platform
 Oracle-based subscriber self-service portal for Broadband Services
 J2EE Wireless Number Porting Platform
 Several OLAP Big Data solutions using Oracle and SQL Server
-Developed proof of concept and live product demos
+Created/ran proofs of concept and live solution demos for clients

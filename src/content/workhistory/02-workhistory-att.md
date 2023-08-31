@@ -11,10 +11,10 @@ co_aria_label: AT&T Labs Home
 co_logo_src: ./assets/logos/att.svg
 co_logo_id: img-logo-job-0
 ---
-Platform architecture, planning, design, and developmentd
+Platform architecture, planning, design, and development
 Defined platform roadmaps
 Managed and prioritized backlog
 Implemented epics, user stories, story cards
+Kubernetes orchestration of containerized microservices
 OpenStack, Ansible, Node.js, Python, MySQL, and Docker
-Kubernetes, containerization, and microservices
 Enterprise automation, DevOps and CI/CD
