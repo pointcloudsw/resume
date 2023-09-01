@@ -2,8 +2,6 @@
 import HeadlineSocial from './HeadlineSocials.astro'; 
 import { getCollection } from 'astro:content';
 const allEntries = await getCollection('socials');
-console.log(allEntries);
-
 ---
 <div class="socials--box">
         {

@@ -30,7 +30,16 @@ const svgCollection = defineCollection({
     ,viewBox: z.string().optional()
     ,d: z.string().optional()
   })
-})
+});
+
+const techStackCollection = defineCollection({
+  type: 'content',
+  schema: z.object({
+    id: z.number().optional()
+    ,heading: z.string().optional()
+    ,dir: z.string().optional()
+  })
+});
 
 const socialsCollection = defineCollection({
   type: 'content',
@@ -88,4 +97,5 @@ export const collections = {
   ,'workhistory': workhistoryCollection
   ,'socials': socialsCollection
   ,'svg': svgCollection
+  ,'techstack': techStackCollection
 };
