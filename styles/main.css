@@ -234,7 +234,7 @@ li{
 }
 
 .td--card--techstack{
-    padding: 0.2% 10% 0.2% 2%;
+    padding: 0.2% 8% 0.2% 4%;
     text-align: center;
 }
 
@@ -258,7 +258,7 @@ li{
     text-align: right;
     vertical-align: top;
     /* align-items: flex-start; */
-    padding: 0 2% 0 0;
+    padding: 0 0 0 4%;
     /* padding: 3px 12px 0 0; */
     /* margin: 0 12px 0 0; */
     font-size: large;
