@@ -1,9 +1,7 @@
 ---
 import { getEntry } from 'astro:content';
-
 const { slug } = Astro.props;
 const whbonusEntry = await getEntry('whbonus',slug);
-console.log(slug, whbonusEntry);
 ---
 { whbonusEntry &&
     <div>

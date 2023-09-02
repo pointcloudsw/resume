@@ -19,6 +19,14 @@ const whbonusCollection = defineCollection({
     })
 });
 
+const summaryCollection = defineCollection({
+  type: 'content',
+  schema: z.object({
+    id: z.number().optional()
+    ,section: z.string().optional()
+    ,dir: z.string().optional()
+  })
+});
 const svgCollection = defineCollection({
   type: 'content',
   schema: z.object({
@@ -86,7 +94,6 @@ const workhistoryCollection = defineCollection({
     ,co_href: z.string().url().optional()
     ,co_aria_label: z.string().optional()
     ,co_name: z.string().optional()
-    // ,whbonus: z.array(reference('whbonus'))
     })
 });
 
@@ -96,6 +103,7 @@ export const collections = {
   ,'whbonus': whbonusCollection
   ,'workhistory': workhistoryCollection
   ,'socials': socialsCollection
+  ,'summary': summaryCollection
   ,'svg': svgCollection
   ,'techstack': techStackCollection
 };

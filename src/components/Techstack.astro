@@ -8,7 +8,8 @@ const { heading, body } = Astro.props;
         </td>
         <td class="td--card--techstack">
             <div>
-                {body.split('\n').map((b)=>(
+                { 
+                body.split('\n').map((b:any)=>(
                     <span class="card--techstack">{b}</span>
                 ))}
                 <div class="hr--card--techstack-sep"></div>
