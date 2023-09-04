@@ -1,3 +1,8 @@
+                                <a aria-label={e.data.co_aria_label} aria-disabled="false" target="_self" href={e.data.co_href}>
+                                    <Image src={img_root} alt={e.data.co_logo_alt} id={e.data.co_logo_id}/>
+                                    <!-- Kforce -->
+                                </a>
+
                                     {
                                             // whbonusEntries.filter((f)=>e.slug === f.slug).map((fe)=>fe.body.split('\n').map((fb)=>(<li>{fb}</li>)))
                                             <li>whbonusEntries.filter((f)=>e.slug === f.slug)</li>
@@ -38,3 +43,21 @@
                                 </ul>
                             </span>
                         </div>       
+
+
+<div>
+    <div class=socials--list>
+        <a href={logo_href} target={logo_target} class={logo_class}>
+            <div>
+                <HeadlineSocialImage
+                    svg={svg.slug}
+                />
+            </div>
+        </a>
+    </div>
+    <div>
+        <a href={link_href} target={link_target} class={link_class}>
+            {link_text}
+        </a>
+    </div>
+</div>

@@ -40,7 +40,25 @@ const svgCollection = defineCollection({
     ,d: z.string().optional()
   })
 });
-
+const assetsCollection = defineCollection({
+  type: 'content',
+  schema: z.object({
+    id: z.number().optional()
+    ,name: z.string().optional()
+    ,asset_alt: z.string().optional()
+    ,css_class: z.string().optional()
+    ,asset_inline_style: z.string().optional()
+    ,height: z.number().optional()
+    ,asset_loc: z.number().optional()
+    ,asset_path: z.number().optional()
+    ,asset_src: z.string().optional()
+    ,asset_subtype: z.string().optional()
+    ,asset_type: z.string().optional()
+    ,width: z.number().optional()
+    ,viewBox: z.string().optional()
+    ,d: z.string().optional()
+  })
+});
 const techStackCollection = defineCollection({
   type: 'content',
   schema: z.object({
@@ -103,6 +121,7 @@ const workhistoryCollection = defineCollection({
 export const collections = {
   'education': genericCollection
   ,'accomplishments': genericCollection
+  ,'assets': assetsCollection
   ,'whbonus': whbonusCollection
   ,'workhistory': workhistoryCollection
   ,'socials': socialsCollection

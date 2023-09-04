@@ -66,18 +66,13 @@ li{
     color: var(--mainTextColor);
 }
 #img-logo-job-kforce{
-    /* original w*h: 1000 x 264 */
-    /* inline-size: 10%; */
-    max-inline-size: 6.2rem;
-    min-inline-size: 6.2rem;
-    max-block-size: 1.6rem;
-    min-block-size: 1.6rem;
-    /* max-inline-size: 50%; */
-    padding: 0;
-    margin: 0;
+    /* inline-size: 50%; */
+    /* scale: 0.15; */
+    /* transform: scale(0.50) translate(-100%, -100%); */
+    padding: 0 0 0 0;
     /* max-width: 40%; */
-    /* max-width: 6rem; */
-    /* max-height: 10%; */
+    max-width: 6rem;
+    max-height: 10%;
 }
 
 
