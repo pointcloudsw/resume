@@ -454,6 +454,12 @@ li{
     .no-screen *{
         display: unset;
     }
+    .print-break-avoid{
+        page-break-inside: avoid;
+    }
+    .print-break-before{
+        page-break-before: always;
+    }
   }
   @media print {
     @page {

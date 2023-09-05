@@ -4,7 +4,7 @@ const { sectitle } = Astro.props;
 import { getCollection } from 'astro:content';
 const allEntries = await getCollection('techstack');
 ---
-<section class="tech-stack-section--page">
+<section class="tech-stack-section--page print-break-avoid">
 
     <h2 class="section-heading--h2">{sectitle}</h2>
     <div class="line-break"></div>

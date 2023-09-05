@@ -7,9 +7,13 @@ import profilePic from '../assets/images/atMuellerLakeMedium.jpg';
 const HEADLINE_NAME = "Jonathan Roll"; 
 ---
     <section id="wrapper--hero" class="section--page">
-        <Image src={profilePic} alt="" id="profile-pic" loading="eager"/>
+        <a href={Astro.site.href}>
+            <Image src={profilePic} alt="" id="profile-pic" loading="eager"/>
+        </a>
         <div>
-            <h1 id="name-headline">{HEADLINE_NAME}</h1>
+            <a href={Astro.site.href}>
+                <h1 id="name-headline">{HEADLINE_NAME}</h1>
+            </a>
             <div class="line-break"></div>
             <HeadlineBio />
         </div>

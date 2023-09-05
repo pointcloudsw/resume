@@ -7,7 +7,7 @@ const Imgs = await Astro.glob('../assets/workhistory/*');
 ---
 {
     allEntries.map((e:any) => (
-        <div class="card--work-history">
+        <div class="card--work-history print-break-avoid">
             {
                 e.data.wh_desc === '01-workhistory-kforce'
                 ?
