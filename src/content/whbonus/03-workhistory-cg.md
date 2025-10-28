@@ -1,5 +1,6 @@
 ---
-whid: 02-workhistory-att
+whid: 03-workhistory-cg
+slug: 03-workhistory-cg
 ---
 ✔️ Achieved 40% delivery increase with CI/CD pipelines
 ✔️ 10x increase in availability through IaC automation

@@ -1,6 +1,6 @@
 ---
-whid: 02-workhistory-att
-slug: 02-workhistory-att
+whid: 01-workhistory-kforce
+slug: 01-workhistory-kforce
 ---
 ✔️ Achieved 40% delivery increase with CI/CD pipelines
 ✔️ 10x increase in availability through IaC automation

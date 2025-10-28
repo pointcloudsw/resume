@@ -80,7 +80,7 @@ const socialsCollection = defineCollection({
 
 const workhistoryCollection = defineCollection({
   type: 'content',
-  schema: z.object({
+  schema: ({ image }) => z.object({
      id: z.number().optional()
      ,wh_desc: z.string().optional()
      ,content_dir: z.string().optional()
@@ -89,7 +89,8 @@ const workhistoryCollection = defineCollection({
     ,whbonus: reference('whbonus').optional()
     ,start_dt: z.string().optional()
     ,end_dt: z.string().optional()
-    ,co_logo_src: z.string().optional()
+    // ,co_logo_src: z.string().optional()
+    ,co_logo_src: image()
     ,co_logo_id: z.string().optional()
     ,co_logo_class: z.string().optional()
     ,co_logo_alt: z.string().optional()
