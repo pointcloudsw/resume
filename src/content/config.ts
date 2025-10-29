@@ -11,11 +11,25 @@ const genericCollection = defineCollection({
     ,line2: z.string().optional()
     })
 });
+const accomplishments = defineCollection({
+  type: 'content',
+  schema: ({image}) => z.object({
+    line1: z.string()
+    ,title: z.string().optional()
+    ,exam: z.string().optional()
+    ,issuer: z.string().optional()
+    ,badge: image().optional()
+    ,alt: z.string().optional()
+    ,date: z.string().optional()
+    ,expires: z.string().optional()
+    ,credentialid: z.string().optional()
+    })
+});
 
 const whbonusCollection = defineCollection({
   type: 'content',
   schema: z.object({
-    whid: z.string()
+    whid: z.string().optional()
     })
 });
 
@@ -103,7 +117,7 @@ const workhistoryCollection = defineCollection({
 
 export const collections = {
   'education': genericCollection
-  ,'accomplishments': genericCollection
+  ,'accomplishments': accomplishments
   ,'whbonus': whbonusCollection
   ,'workhistory': workhistoryCollection
   ,'socials': socialsCollection

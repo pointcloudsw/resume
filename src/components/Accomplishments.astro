@@ -1,12 +1,28 @@
 ---
 import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
 
 const allEntries = await getCollection('accomplishments');
 ---
 {
-    allEntries.map((e) => (
-    <div class="card--project">
-        <span>🏆 </span>{e.data.line1}
-    </div>
-    ))
+    allEntries.map((e:any) => (
+        <div class="card--project">
+            <div class="cert">
+                {
+                e.data.line1 === 'cert'
+                ?
+                    <Image src={e.data.badge} alt={e.data.alt}/>
+                    <span class="credentialtitle">{e.data.title}</span>
+                    <p></p>
+                    <span class="credentialid">Credential ID <span>{`  ${e.data.credentialid}`}</span></span>
+                :
+                    <span class="champ">🏆</span><span class="credentialtitle">{e.data.line1}</span>
+                    <p></p>
+                    <span></span>
+            }
+            </div>
+                
+        </div>
+    )
+    )
 }
