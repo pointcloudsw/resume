@@ -4,12 +4,16 @@ import { Image } from 'astro:assets';
 import { ImageMetadata } from 'astro';
 import WhBonus from './WhBonus.astro';
 const allEntries = await getCollection('workhistory');
+allEntries.forEach( e => console.log(e));
 ---
 {
-    allEntries.map((e:any) => (
+    allEntries
+        .sort( ( a, b ) => a.data.id - b.data.id )
+        .map( e => (
         <div class="card--work-history print-break-avoid">
             {
-                e.data.wh_desc === '01-workhistory-kforce'
+                //  accommodate logo
+                e.data.wh_logo_only
                 ?
                     <table class="table-work-history-header">
                         <tr>

@@ -1,12 +1,16 @@
 ---
-id: 01
+id: 02
 heading: Languages
 dir: techstack
 ---
 Go
 TypeScript
 Python
-Powershell
 JavaScript
-Bash
 C/C++
+SQL
+Bash
+Powershell
+Azure ARM
+Terraform
+CloudFormation

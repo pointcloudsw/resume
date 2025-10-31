@@ -11,6 +11,7 @@ const allEntries = await getCollection('summary');
         {
             allEntries.map((e:any)=>(
                 e.body.split('\n').map((b:any)=>(
+                    <li>✔︎</li>
                     <li><Fragment set:html={b}/></li>
                 ))
             ))

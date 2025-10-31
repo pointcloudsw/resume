@@ -1,6 +1,7 @@
 ---
 line1: cert
 title: AWS Certified Solutions Architect – Professional
+astroImportName: aws01
 exam: SAP-C02
 issuer: Amazon Web Services
 badge: 01-aws-sap-c02.png

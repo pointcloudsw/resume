@@ -1,6 +1,7 @@
 ---
 line1: cert
 title: AWS Certified Cloud Practitioner
+astroImportName: aws03
 exam: CLF-C02
 issuer: Amazon Web Services
 badge: 03-aws-clf-c02.png

@@ -59,11 +59,25 @@ li{
 #container--main{
     max-width: 680px;
     margin: 0 auto;
-    padding: 1em;
+    padding: 1em 1em 3rem 1em;
 }
 
 #email{
     color: var(--mainTextColor);
+}
+#img-logo-job-cg{
+    /* original w*h: 1000 x 264 */
+    /* inline-size: 10%; */
+    max-inline-size: 6.2rem;
+    min-inline-size: 6.2rem;
+    max-block-size: 1.6rem;
+    min-block-size: 1.6rem;
+    /* max-inline-size: 50%; */
+    padding: 0;
+    margin: 0;
+    /* max-width: 40%; */
+    /* max-width: 6rem; */
+    /* max-height: 10%; */
 }
 #img-logo-job-kforce{
     /* original w*h: 1000 x 264 */
@@ -80,7 +94,9 @@ li{
     /* max-height: 10%; */
 }
 
-
+#name-headline {
+    margin: auto auto 0.4rem 0;
+}
 #profile-pic{
     border-radius: 50%;
     height: 130px;
@@ -93,6 +109,33 @@ li{
 }
 #qualifications--list{
     list-style: none;
+    display: grid;
+    grid: auto / 1fr 13fr;
+    gap: 1rem 0.25rem;
+    padding: 0rem 1rem;
+}
+#qualifications--list :nth-child(2n+1) {
+    /* color: #fff; */
+    color: var(--mainTextColor);
+    margin: 0 auto;
+}
+#qualifications--list li {
+    line-height: 1.5rem;
+    /* margin-left: 1rem; */
+    /* color: greenyellow; */
+}
+#qualifications--list li::before{
+    /* content: '✔︎\0012\0012'; */
+    /* color: #fff; */
+    /* ✔︎ 
+    ✓
+CHECK MARK
+Unicode: U+2713, UTF-8: E2 9C 93
+✓
+✔︎
+HEAVY CHECK MARK
+Unicode: U+2714 U+FE0E, UTF-8: E2 9C 94 EF B8 8E
+*/
 }
 
 
@@ -132,6 +175,11 @@ li{
 
 
 /* Classes */
+.bio-headline-img {
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
 .card--boxlist{
     border: 1px solid var(--mainBorderColor);
     border-radius: 5px;
@@ -183,15 +231,17 @@ div.card--project > span.cert ~ p {
 div.card--project > .cert {
     display: grid;
     grid: 2fr / 6% 94%;
+    gap: 0.4rem 1rem;
 }
 div.card--project .cert > .credentialtitle {
-    color: #fff;
-    line-height: 0.5rem;
-    margin: 0.66rem auto auto 0rem;
+    /* color: #fff; */
+    color: var(--mainTextColor);
+    line-height: 1rem;
+    place-self: center start;
 }
 div.card--project .cert .credentialid {
-    color: #fff;
-    margin: 0rem auto auto 0rem;
+    /* color: #fff; */
+    color: var(--mainTextColor);
     line-height: 0.5rem;
     font-size: 80%;
 }
@@ -216,11 +266,16 @@ div.card--project .cert .champ {
     padding-left: 2em;
 }
 
-
-
-.hr--card--techstack-sep{
+.hr--card--techstack-sep-top{
+    border-top: 1.0px solid var(--mainBorderColor);
+    /* padding: 0.5% 0; */
+    block-size: 1.2rem;
+    inline-size: 100%;
+}
+.hr--card--techstack-sep-bot{
     border-bottom: 1.0px solid var(--mainBorderColor);
-    padding: 0.5% 0 0.5% 0;
+    /* padding: 0.5% 0; */
+    block-size: 1.2rem;
 }
 
 .line-break{
@@ -259,9 +314,9 @@ div.card--project .cert .champ {
     fill: var(--mainTextColor);
     color: var(--mainTextColor);
 }
-.social--logo-a-text{
-    line-height: .2rem;
-    vertical-align: top;
+.social--logo-a-text[href*='twitter.com']{
+    /* line-height: .2rem; */
+    vertical-align: middle;
 }
 
 .table--contact-info{
@@ -272,6 +327,21 @@ div.card--project .cert .champ {
 .table--techstack{
     margin: 0 8% 0 0;
     min-width: 100%;
+}
+.grid--techstack {
+    display: grid;
+    grid: auto / 1fr 9fr;
+    gap: 1rem 1.5rem;
+}
+.grid--techstack > :nth-child(2n+1) {
+    /* color: #fff; */
+    color: var(--mainTextColor);
+    min-inline-size: 1rem;
+    padding: 0rem 1rem;
+    place-self: center;
+    rotate: -90deg;
+    text-align: center;
+    text-wrap: nowrap;
 }
 .table--work-experience{
     width: 100%;
@@ -288,8 +358,19 @@ div.card--project .cert .champ {
 }
 
 .td--card--techstack{
-    padding: 0.2% 8% 0.2% 4%;
+    border-bottom: 1.0px solid var(--mainBorderColor);
+    border-top: 1.0px solid var(--mainBorderColor);
+    display: flex;
+    flex-flow: wrap;
+    inline-size: 100%;
+    justify-content: center;
+    margin: 1rem auto;
+    padding: 1rem;
     text-align: center;
+}
+
+.td--card--techstack > * {
+    place-self: center;
 }
 
 .td--headline-contact-info *{
@@ -298,24 +379,29 @@ div.card--project .cert .champ {
     vertical-align: top;
 }
 .td--headline-contact-info-lhs{
+    vertical-align: top;
     text-align: left;
-    width: 60%;
+    width: 64%;
 }
 .td--headline-contact-info-rhs{
     text-align: right;
-    width: 40%
+    width: 36%
 }
 
 .td-tech-stack-row-header{
     width: 25%;
     /* min-width: 8em; */
-    text-align: right;
-    vertical-align: top;
+    /* text-align: right; */
+    /* text-align: right; */
+    /* text-align: end; */
+    /* vertical-align: start; */
+    /* margin: 5px 5px 5px 0px; */
     /* align-items: flex-start; */
-    padding: 0 0 0 4%;
+    /* padding: 0 0 0 4%; */
     /* padding: 3px 12px 0 0; */
     /* margin: 0 12px 0 0; */
     font-size: large;
+    /* rotate: -90deg; */
 }
 
 .td-work-history-employer{
@@ -333,6 +419,7 @@ div.card--project .cert .champ {
 }
 .td-work-history-from-to-dates{
     text-align: right;
+    vertical-align: text-top;
 }
 .td-work-history-summary{
     width: 100%;
@@ -346,6 +433,7 @@ div.card--project .cert .champ {
 
 .tech-stack-section--page{
     padding-top: .5em;
+    padding-bottom: 1.5rem;
 }
 
 .tr--contact-info{
@@ -400,7 +488,10 @@ div.card--project .cert .champ {
     flex-direction: row;
     align-content: space-between;
     justify-content: space-between;
-    padding: 0 2% 0 2%;
+    padding: 0rem 1rem;
+}
+.socials--box > div {
+    padding: 0.5rem;
 }
 /**
  **  end resume socials stanza

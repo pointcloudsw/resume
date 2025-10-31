@@ -1,6 +1,7 @@
 ---
 id: 01
 wh_desc: 01-workhistory-kforce
+wh_logo_only: true
 title: Consulting Solutions Director
 wh_smry: Cloud architecture, design and implementation for Kforce Consulting clients
 start_dt: June 2022

@@ -1,6 +1,7 @@
 ---
 line1: cert
 title: Microsoft Certified Azure Administrator Associate
+astroImportName: msa01
 exam: AZ-104
 issuer: Microsoft Azure Cloud
 badge: 05-msa-az-104.png

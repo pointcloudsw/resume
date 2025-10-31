@@ -8,18 +8,18 @@ const allEntries = await getCollection('techstack');
 
     <h2 class="section-heading--h2">{sectitle}</h2>
     <div class="line-break"></div>
-
     <div class="card--generic">
-        <div id="wrapper--techstack__items">
+        <article class="grid--techstack">
             {
-                allEntries.map((e)=>(
-                    <Techstack
-                        heading={e.data.heading}
-                        body={e.body}
-                    />
-                ))
+                allEntries
+                    .sort( ( a, b ) => a.data.id - b.data.id )
+                    .map( e =>
+                        <Techstack
+                            heading={e.data.heading}
+                            body={e?.body ?? ''}
+                        />
+                    )
             }
-        </div>
+        </article>
     </div>
-    
 </section>

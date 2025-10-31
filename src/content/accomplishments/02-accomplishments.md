@@ -1,6 +1,7 @@
 ---
 line1: cert
 title: AWS Certified Solutions Architect – Associate
+astroImportName: aws02
 exam: SAA-C02
 issuer: Amazon Web Services
 badge: 02-aws-saa-c02.png

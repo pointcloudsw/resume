@@ -1,5 +1,5 @@
 ---
-id: 04
+id: 01
 heading: Cloud
 dir: techstack
 ---
@@ -9,5 +9,7 @@ Serverless
 Google Cloud
 AWS
 Azure
-Kubernetes
+OpenStack
+cloud-init
 Docker
+Kubernetes

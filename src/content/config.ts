@@ -15,6 +15,7 @@ const accomplishments = defineCollection({
   type: 'content',
   schema: ({image}) => z.object({
     line1: z.string()
+    ,astroImportName: z.string().optional()
     ,title: z.string().optional()
     ,exam: z.string().optional()
     ,issuer: z.string().optional()
@@ -59,9 +60,9 @@ const techStackCollection = defineCollection({
   type: 'content',
   schema: z.object({
     id: z.number().optional()
-    ,heading: z.string().optional()
-    ,dir: z.string().optional()
-  })
+    ,heading: z.string().nullable()
+    ,dir: z.string().nullable()
+  }).nullable()
 });
 
 const socialsCollection = defineCollection({
@@ -105,6 +106,10 @@ const workhistoryCollection = defineCollection({
     ,end_dt: z.string().optional()
     // ,co_logo_src: z.string().optional()
     ,co_logo_src: image()
+    ,wh_logo_only: z.boolean().default(false).nullable()
+    ,wh_logo_width: z.number().optional().nullable()
+    ,wh_logo_height: z.number().optional().nullable()
+    ,wh_logo_scale: z.number().optional().nullable()
     ,co_logo_id: z.string().optional()
     ,co_logo_class: z.string().optional()
     ,co_logo_alt: z.string().optional()

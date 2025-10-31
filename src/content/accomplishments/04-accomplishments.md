@@ -1,6 +1,7 @@
 ---
 line1: cert
 title: Professional Cloud Architect
+astroImportName: gcp01
 exam: GCP-PCA
 issuer: Google Cloud Platform
 badge: 04-gcp-pca.png
