@@ -66,32 +66,20 @@ li{
     color: var(--mainTextColor);
 }
 #img-logo-job-cg{
-    /* original w*h: 1000 x 264 */
-    /* inline-size: 10%; */
     max-inline-size: 6.2rem;
     min-inline-size: 6.2rem;
     max-block-size: 1.6rem;
     min-block-size: 1.6rem;
-    /* max-inline-size: 50%; */
     padding: 0;
     margin: 0;
-    /* max-width: 40%; */
-    /* max-width: 6rem; */
-    /* max-height: 10%; */
 }
 #img-logo-job-kforce{
-    /* original w*h: 1000 x 264 */
-    /* inline-size: 10%; */
     max-inline-size: 6.2rem;
     min-inline-size: 6.2rem;
     max-block-size: 1.6rem;
     min-block-size: 1.6rem;
-    /* max-inline-size: 50%; */
     padding: 0;
     margin: 0;
-    /* max-width: 40%; */
-    /* max-width: 6rem; */
-    /* max-height: 10%; */
 }
 
 #name-headline {
@@ -115,29 +103,12 @@ li{
     padding: 0rem 1rem;
 }
 #qualifications--list :nth-child(2n+1) {
-    /* color: #fff; */
     color: var(--mainTextColor);
     margin: 0 auto;
 }
 #qualifications--list li {
     line-height: 1.5rem;
-    /* margin-left: 1rem; */
-    /* color: greenyellow; */
 }
-#qualifications--list li::before{
-    /* content: '✔︎\0012\0012'; */
-    /* color: #fff; */
-    /* ✔︎ 
-    ✓
-CHECK MARK
-Unicode: U+2713, UTF-8: E2 9C 93
-✓
-✔︎
-HEAVY CHECK MARK
-Unicode: U+2714 U+FE0E, UTF-8: E2 9C 94 EF B8 8E
-*/
-}
-
 
 #socials--list a{
     font-weight: 300;
@@ -189,9 +160,7 @@ Unicode: U+2714 U+FE0E, UTF-8: E2 9C 94 EF B8 8E
     display: inline-block;
 }
 .card--education{
-    /* padding-top: 1.5em; */
     padding: 1rem 0 0 0;
-    /* line-height: 1px; */
 }
 .card--generic{
     border-left: 1px solid var(--mainBorderColor);
@@ -219,10 +188,7 @@ Unicode: U+2714 U+FE0E, UTF-8: E2 9C 94 EF B8 8E
 }
 
 div.card--project > span.cert ~ p {
-    /* line-height: unset; */
     line-height: 0.5rem;
-    /* text-align: top; */
-    /* vertical-align: top; */
     scale: 0.9;
     margin: 0px auto auto 2%;
 
@@ -234,13 +200,11 @@ div.card--project > .cert {
     gap: 0.4rem 1rem;
 }
 div.card--project .cert > .credentialtitle {
-    /* color: #fff; */
     color: var(--mainTextColor);
     line-height: 1rem;
     place-self: center start;
 }
 div.card--project .cert .credentialid {
-    /* color: #fff; */
     color: var(--mainTextColor);
     line-height: 0.5rem;
     font-size: 80%;
@@ -268,13 +232,11 @@ div.card--project .cert .champ {
 
 .hr--card--techstack-sep-top{
     border-top: 1.0px solid var(--mainBorderColor);
-    /* padding: 0.5% 0; */
     block-size: 1.2rem;
     inline-size: 100%;
 }
 .hr--card--techstack-sep-bot{
     border-bottom: 1.0px solid var(--mainBorderColor);
-    /* padding: 0.5% 0; */
     block-size: 1.2rem;
 }
 
@@ -284,16 +246,11 @@ div.card--project .cert .champ {
 }
 
 .p--education-degree{
-    /* line-height: 1rem; */
     margin: 0 0 0 0;
-    /* font-size: 1rem; */
-    /* overflow-wrap: break-word; */
 }
 .p--education-school{
     line-height: 1rem;
     margin: 1px 0 0 0;
-    /* font-size: 1rem; */
-    /* overflow-wrap: break-word; */
 }
 .section-heading--h2{
     line-height: 0.5em;
@@ -315,7 +272,6 @@ div.card--project .cert .champ {
     color: var(--mainTextColor);
 }
 .social--logo-a-text[href*='twitter.com']{
-    /* line-height: .2rem; */
     vertical-align: middle;
 }
 
@@ -334,7 +290,6 @@ div.card--project .cert .champ {
     gap: 1rem 1.5rem;
 }
 .grid--techstack > :nth-child(2n+1) {
-    /* color: #fff; */
     color: var(--mainTextColor);
     min-inline-size: 1rem;
     padding: 0rem 1rem;
@@ -390,18 +345,7 @@ div.card--project .cert .champ {
 
 .td-tech-stack-row-header{
     width: 25%;
-    /* min-width: 8em; */
-    /* text-align: right; */
-    /* text-align: right; */
-    /* text-align: end; */
-    /* vertical-align: start; */
-    /* margin: 5px 5px 5px 0px; */
-    /* align-items: flex-start; */
-    /* padding: 0 0 0 4%; */
-    /* padding: 3px 12px 0 0; */
-    /* margin: 0 12px 0 0; */
     font-size: large;
-    /* rotate: -90deg; */
 }
 
 .td-work-history-employer{

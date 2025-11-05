@@ -8,3 +8,6 @@ Svelte
 Astro
 Gorilla
 Vue3
+HTML
+CSS
+Vanilla JS
